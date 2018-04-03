@@ -6,6 +6,7 @@
     <th>Price
     <th>Customer</th>  
   </tr>
+  <%= render(@orders.products) || "There are no products!" %>
   <% @orders.each do |order| %>
     <% order.products.each do |product| %>
       <tr>

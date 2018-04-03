@@ -1,5 +1,5 @@
 <tr>
   <td><%= order.id %></td>
-  <%= render(order.products) || "No Products" %>
+  <%= render :partial => "product", :collection => order.products %>
   <td><%= order.customer.name %></td>
 </tr>

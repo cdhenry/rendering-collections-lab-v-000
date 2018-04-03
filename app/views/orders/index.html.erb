@@ -4,9 +4,9 @@
     <th>Order Id</th>
     <th>Product
     <th>Price
-    <th>Customer</th>  
+    <th>Customer</th>
   </tr>
-  <%= render(@orders.products) || "There are no products!" %>
+  <%= render(@orders.products) || "There are no orders!" %>
   <% @orders.each do |order| %>
     <% order.products.each do |product| %>
       <tr>

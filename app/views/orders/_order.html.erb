@@ -1,0 +1,8 @@
+    
+<% order.products.each do |product| %>
+  <tr>
+    <td><%= order.id %></td>
+    <%= render(order.products) || "No Orders" %>
+    <td><%= order.customer.name %></td>
+  </tr>
+<% end %>
